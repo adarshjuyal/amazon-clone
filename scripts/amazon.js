@@ -75,8 +75,14 @@ button.addEventListener('click',()=>{
   productId: productId,
   quantity: 1
  });}
+
+let totalItem=0;
+ cart.forEach((total)=>{
+  totalItem+=total.quantity;
+ });
+ console.log(totalItem);
  console.log(cart);
  
- 
+  document.querySelector('.js-cart-quantity').innerHTML=totalItem;
 });
 });
