@@ -67,6 +67,6 @@ export function updateDeliveryOption(productId,deliveryOptionId){
 
         }
     });
-    matchingItem.deliverOptionId=deliveryOptionId;
+    matchingItem.deliveryOptionId=deliveryOptionId;
     saveToStorage();
 }
