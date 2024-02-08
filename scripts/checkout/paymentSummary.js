@@ -15,7 +15,7 @@ shippingPriceCents+=deliveryOption.priceCents;
 
 });
  const totalBeforeTax= productPriceCents+ shippingPriceCents;
- const tax=(totalBeforeTax *0.1);
+ const tax=(totalBeforeTax *0.05);
  const orderTotal=tax+totalBeforeTax;
 
 
@@ -25,7 +25,7 @@ shippingPriceCents+=deliveryOption.priceCents;
  </div>
 
  <div class="payment-summary-row">
-   <div>Items (3):</div>
+   <div>Items ${(cart.length)}:</div>
    <div class="payment-summary-money">₹${formatCurrency(productPriceCents)}</div>
  </div>
 
@@ -40,7 +40,7 @@ shippingPriceCents+=deliveryOption.priceCents;
  </div>
 
  <div class="payment-summary-row">
-   <div>Estimated tax (10%):</div>
+   <div>Estimated tax (5%):</div>
    <div class="payment-summary-money">₹${formatCurrency(tax)}</div>
  </div>
 
