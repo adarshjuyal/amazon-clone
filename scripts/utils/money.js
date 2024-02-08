@@ -1,4 +1,4 @@
 export function formatCurrency (rupees){
-    return ((rupees*30)/100).toFixed(2);
+    return (Math.round((rupees*30))/100).toFixed(2);
 }
 
